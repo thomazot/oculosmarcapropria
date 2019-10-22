@@ -155,6 +155,10 @@
                     selector: '.toolbar .view-mode .list',
                     mode: 'html',
                 },
+                'z-menu': {
+                    selector: '.categories__show',
+                    mode: 'html'
+                }
             }
             $j(document).ready(function() {
                 addSVG(svgs)
