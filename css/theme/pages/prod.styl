@@ -1,0 +1,143 @@
+.product-image-gallery
+    box-shadow: none
+
+.product-image-thumbs .thumb-link:hover, .product-image-thumbs .thumb-link.on, .product-image-thumbs .thumb-link
+    box-shadow: none
+
+.more-views
+    border-top: solid 1px #ebebeb
+    border-bottom: solid 1px #ebebeb
+
+.sharing-links
+    display: none
+
+.prod
+    &__shop
+        .col
+            width: 100%
+
+        .qty-wrapper
+            display: none
+
+        .add-to-cart-btn
+            line-height: 1
+            height: 40px
+            background: #ff6c00
+            color: #fff
+            font-size: 15px
+            font-weight: bold
+            text-transform: uppercase
+            padding: 0
+
+            &:before
+                content: 'Incluir no pedido'
+
+            span
+                display: none
+
+    &__name
+        h1
+            font-size: 18px
+            font-weight: bold
+            text-transform: uppercase
+            line-height: 1
+
+    &__sku-wish
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-size: 13px
+        color: #959595
+        text-transform: uppercase
+        padding: 15px 0
+        border-bottom: solid 1px #ebebeb
+        margin-bottom: 15px
+
+        .add-to-links
+            a
+                padding: 0
+                font-size: 13px
+                color: #959595
+                border: 0
+                display: block
+                margin: 0
+                box-shadow: none
+                font-weight: regular
+                text-transform: none
+
+            li:first-child a
+                border-top: 0
+
+            li
+                display: none
+
+        li.link-wishlist
+            display: block
+            padding-top: 0
+
+            a
+                display: flex
+                justify-content: flex-start
+                align-items: center
+
+                &:before
+                    icon('\f004')
+                    color: #fff
+                    text-shadow: 1px 0 0 #959595, -1px 0 0 #959595, 0 1px 0 #959595, 0 -1px 0 #959595
+                    margin-right: 5px
+
+                &:after
+                    content: 'Adicionar aos favoritos'
+                    font-family: 'Open Sans', sans-serif
+
+                span
+                    display: none
+
+    &__description .std
+        font-size: 13px
+        color: #898989
+        margin-bottom: 15px
+
+    &__login
+        background: #f1f1f1
+        font-size: 13px
+        font-weight: regular
+        text-align: center
+        padding: 25px
+
+        .user-logged &
+            display: none
+
+        &-title
+            font-size: 20px
+
+        &-action
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 20px 0 0
+
+            span
+                margin: 0 20px
+
+            a
+                display: inline-flex
+                justify-content: center
+                align-items: center
+                width: 120px
+                height: 38px
+                background: color2_bg
+                text-transform: uppercase
+                color: #fff
+
+@media (min-width: 993px)
+    .more-views
+        border: 0
+
+    .prod
+        &__img
+            flex: 1
+            min-width: 0
+
+        &__shop
+            flex: 0 1 370px

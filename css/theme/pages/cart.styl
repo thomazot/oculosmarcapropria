@@ -1,0 +1,226 @@
+.checkout-cart-index
+    .page-title, .breadcrumb
+        display: none
+
+.qty-wrapper
+    input
+        box-shadow: none
+        border-radius: 0
+        font-size: 14px
+        color: #959595
+        border: 0
+        box-shadow: 0 0 0 1px #ebebeb
+        background: #fff
+
+    .input-box
+        position: relative
+        padding-right: 22px
+
+    .bt
+        &.less, &.plus
+            width: 22px
+            height: 50%
+            position: absolute
+            right: 0
+            background: #fff
+            border-radius: 0
+            box-shadow: 0 0 0 1px #ebebeb
+            text-indent: 0
+            font-size: 14px
+            color: #959595
+            display: flex
+            justify-content: center
+            align-items: center
+            line-height: 1
+
+            span
+                display: inline
+
+            &:before
+                display: none
+
+        &.less
+            bottom: 0
+
+        &.plus
+            top: 0
+
+    .bt-box
+        position: static
+        border-radius: 0
+        box-shadow: none
+        transform: none
+
+.cart-table
+    footer, .sku
+        display: none
+
+    header
+        background: #f1f1f1
+
+    .th
+        font-size: 14px
+        font-weight: regular
+        color: #959595
+        text-transform: none
+
+    h2.name a
+        font-size: 15px
+        font-weight: regular
+
+    .item-options
+        background: none
+        padding: 0
+
+        dt, dd
+            font-size: 11px
+            font-weight: regular
+            text-transform: uppercase
+
+        dt
+            flex: 0 0 auto
+            margin-right: 3px
+
+        dd
+            flex: 1
+            min-width: 0
+
+    .cart-price
+        font-size: 15px
+        font-weight: bold
+
+    .btn-remove
+        &:before
+            display: none
+
+        &:after
+            content: '+'
+            width: 22px
+            height: 22px
+            background: #cccccc
+            color: #fff
+            display: flex
+            justify-content: center
+            align-items: center
+            transform: rotate(45deg)
+            border-radius: 50%
+            line-height: 1
+            font-size: 20px
+
+.cart-product-line
+    border-color: #ebebeb
+
+.coupon, .shipping
+    box-shadow: 0 0 0 1px #ebebeb
+
+    .title
+        font-size: 14px
+        font-weight: regular
+        color: #959595
+
+    .btn
+        border-radius: 0
+        background: color2_bg
+
+        &:before
+            content: 'OK'
+
+        span
+            display: none
+
+    input
+        box-shadow: none
+        border: solid 1px #ebebeb
+        border-radius: 0
+
+.shipping__postcode label
+    display: none
+
+.cart__end
+    box-shadow: 0 0 0 1px #ebebeb
+    padding: 16px
+    margin: -15px
+
+    .totals
+        box-shadow: none
+
+        .title
+            display: none
+
+    .totals__table
+        tbody
+            display: none
+
+.totals__table td
+    .price
+        font-size: 25px
+        font-weight: bold
+        text-align: right
+        color: color2_bg
+
+.totals__table .a-right:first-child
+    &:before
+        content: 'Total: '
+        font-size: 15px
+        font-weight: regular
+        color: #959595
+
+    strong
+        display: none
+
+.cart__links
+    display: block
+
+    .btn-continue
+        background: #f1f1f1
+        color: color1_bg
+        box-shadow: none
+        font-size: 15px
+        font-weight: regular
+        text-transform: uppercase
+        letter-spacing: 1px
+        width: 100%
+        margin: 10px 0
+        border-radius: 0
+
+    .btn-checkout
+        background: #ff6c00
+        color: #fff
+        font-size: 15px
+        font-weight: bold
+        text-transform: uppercase
+        letter-spacing: 1px
+        width: 100%
+        border-radius: 0
+        margin: 10px 0
+
+@media (min-width: 993px)
+    .shipping, .coupon
+        display: flex
+        align-items: center
+
+        .title
+            margin-bottom: 0
+            margin-right: 10px
+
+    .coupon__form, .shipping__form
+        flex: 1
+        min-width: 0
+        margin: 0
+
+    .cart__end
+        margin: -15px 0
+
+        .totals
+            display: flex
+            justify-content: flex-end
+
+        .totals__content
+            max-width: 280px
+
+    .cart__links
+        display: flex
+        justify-content: space-between
+
+        .btn
+            max-width: 280px

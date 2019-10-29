@@ -1,0 +1,34 @@
+<div class="prod__img">
+    @fotos
+    @selos
+</div>
+<div class="prod__shop">	
+    <div class="col">
+        @compartilhar
+        <div class="prod__name">
+            <h1>@nome</h1>
+            
+        </div>
+        <div class="prod__sku-wish">
+            <small class="sku">SKU: @atributo(sku)</small>
+            <div class="wish">@links</div>
+        </div>
+        <div class="prod__description">@descricao</div>
+
+        <div class="prod__login">
+            <h3 class="prod__login-title">Você é lojista?</h3>
+            <div class="prod__login-description">Faça login ou cadastre-se para ver o preço e comprar</div>
+            <div class="prod__login-action">
+                <a href="/customer/account/" class="prod__login-login">Login</a>
+                <span>ou</span>
+                <a href="/customer/account/create" class="prod__login-create">Cadastre-se</a>
+            </div>
+        </div>
+
+        <div class="prod__prices">
+            @preco
+            @bt(comprar)
+        </div>
+
+    </div>
+</div>

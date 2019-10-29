@@ -1,0 +1,72 @@
+.products
+    &__title
+        font-size: 25px
+        text-transform: uppercase
+        text-align: center
+        line-height: 1
+        padding: 20px 0
+        border-bottom: solid 1px #ebebeb
+
+    &__case
+        padding: 20px
+        box-shadow: none
+
+    &__name
+        display: block
+        font-size: 15px
+        font-weight: regular
+        text-align: center
+        color: color1_bg
+
+    &__create
+        display: flex
+        justify-content: center
+        align-items: center
+        min-height: 40px
+        max-width: 250px
+        background: #ff6c00
+        color: #fff
+        font-size: 13px
+        font-weight: bold
+        text-transform: uppercase
+        margin: 20px auto
+
+        .user-logged &
+            display: none
+
+        &:hover
+            color: #fff
+            background: color1_bg
+
+    .configurable-swatch-list
+        justify-content: center
+
+        a
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 11px
+            color: color1_bg
+            text-transform: uppercase
+            border-radius: 50%
+            min-width: 20px
+            height: 20px
+            padding: 0
+            box-shadow: 0 0 0 1px #e2e2e2
+
+        a:hover, .selected a
+            background: #fff
+            box-shadow: 0 0 0 1px #e2e2e2, 0 0 0 3px #fff, 0 0 0 4px color1_bg
+
+@media (min-width: 993px)
+    .products
+        &__case
+            .price-box, .products__create
+                opacity: 0
+                transition: all 0.2s ease
+
+            &:hover
+                box-shadow: 0px 7px 13.95px 1.05px rgba(10, 10, 10, 0.1)
+
+                .price-box, .products__create
+                    opacity: 1

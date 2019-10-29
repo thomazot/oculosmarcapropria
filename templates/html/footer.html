@@ -1,0 +1,64 @@
+<div class="footer__box footer__box--about">
+    <h3 class="footer__title">Sobre Nós</h3>
+    <div class="footer__content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris laoreet,
+        metus eu elementum placerat, augue arcu luctus est, id malesuada elit
+        orci at sapien. Aliquam posuere euismod purus a ultricies. Sed eu tellus
+        sagittis, volutpat nisl at, finibus lectus. Fusce non accumsan erat.
+        Duis lacinia arcu eu turpis placerat consequat. Morbi eget pharetra
+        purus, eget dapibus lorem. Aliquam posuere euismod purus a ultricies.
+    </div>
+</div>
+
+<div class="footer__box footer__box--contact">
+    <h3 class="footer__title">Fale Conosco</h3>
+    <div class="footer__content">
+        <div class="footer__phone">
+            <svg class="ico ico-z-phone"><use xlink:href="#z-phone" /></svg>
+            <span>(11) 0000-0000 | (11) 0000-0000</span>
+        </div>
+        <div class="footer__email">
+            <svg class="ico ico-z-email"><use xlink:href="#z-email" /></svg>
+            <span>atendimento@oculosmarcapropria.com.br</span>
+        </div>
+        <div class="footer__timer">
+            <svg class="ico ico-z-timer"><use xlink:href="#z-timer" /></svg>
+            <span>Segunda a Sexta das 0h às 0h</span>
+        </div>
+    </div>
+</div>
+
+<div class="footer__box footer__box--institutional">
+    <h3 class="footer__title">Institucional</h3>
+    <div class="footer__content">
+        {{block type="menubuilder/output" identifier="footer-institutional"}}
+    </div>
+</div>
+
+<div class="footer__box footer__box--buy">
+    <h3 class="footer__title">Como Comprar</h3>
+    <div class="footer__content">
+        {{block type="menubuilder/output" identifier="footer-buy"}}
+    </div>
+</div>
+
+<div class="footer__box footer__box--payment">
+    <h3 class="footer__title">Pagamento</h3>
+    <div class="footer__content">
+        {{widget type="interface/widget_pagtos" template="interface/widgets/pagtos.phtml" identificador="payments" pagtos="all"}}
+    </div>
+</div>
+
+<div class="footer__box footer__box--security">
+    <h3 class="footer__title">Segurança</h3>
+    <div class="footer__content">
+        {{widget type="interface/widget_seals" template="interface/widgets/seals.phtml" identificador="security" seals="all"}}
+    </div>
+</div>
+
+<div class="footer__box footer__box--send">
+    <h3 class="footer__title">Envio</h3>
+    <div class="footer__content">
+        {{widget type="interface/widget_envios" template="interface/widgets/envios.phtml" identificador="send" envios="5,6"}}
+    </div>
+</div>

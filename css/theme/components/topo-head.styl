@@ -1,3 +1,121 @@
 .topo-head
+    background: color1_bg
+    margin-bottom: 0 !important
+
+    a
+        display: inline-block
+        font-size: 12px
+        font-weight: regular
+        line-height: 1
+        color: #fff
+
+    .mymenu
+        display: none
+
+        .user-logged &
+            display: block
+
+        .ul--0
+            display: flex
+            align-items: center
+
+        .a--0
+            font-size: 12px
+            font-weight: regular
+            color: #fff
+            line-height: 1
+
+        .li--0
+            display: flex
+            align-items: center
+            padding: 0 10px
+            margin: 0
+            line-height: 1
+
+            + .li--0
+                border-left: solid 1px #fff
+
+    &__link-create
+        .user-logged &
+            display: none
+
     &__container
         display: flex
+        justify-content: space-between
+        align-items: center
+        width: viewport
+        height: 35px
+        max-width: calc(100% - 32px)
+        margin: 0 auto
+
+    &__whats
+        display: flex
+        align-items: center
+        justify-content: center
+        flex: 1
+
+    &__nav
+        display: none
+        align-items: center
+
+    .header &
+        margin: 10px
+
+        &__container
+            display: block
+            height: auto
+            max-width: 100%
+
+        &__whats, &__nav
+            display: flex
+            align-items: center
+            height: 50px
+            padding: 0 10px
+            max-width: 100%
+
+        &__whats
+            justify-content: flex-start
+
+        &__nav
+            border-top: solid 1px #707070
+
+        .user-logged &
+            &__nav
+                height: auto
+                padding: 0
+
+            &__account
+                width: 100%
+
+            .mymenu
+                .ul--0
+                    display: block
+                    margin: 0
+
+                .a--0
+                    display: block
+                    height: auto
+                    padding: 0
+
+                .li--0
+                    display: flex
+                    justify-content: flex-start
+                    align-items: center
+                    height: 50px
+
+                    + .li--0
+                        border-left: 0
+                        border-top: solid 1px #707070
+
+@media (min-width: 993px)
+    .topo-head
+        order: -2
+
+        &__nav
+            display: block
+
+        &__whats
+            justify-content: flex-start
+
+        .categories &
+            display: none

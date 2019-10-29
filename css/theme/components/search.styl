@@ -1,0 +1,52 @@
+.search
+    &__button
+        background: #fff
+        box-shadow: none
+
+        .ico
+            fill: color2_bg
+            width: 25px
+            height: 25px
+
+        &:hover
+            background: #fff
+
+            .ico
+                fill: color2_bg
+
+    .header &.on
+        .search__input
+            height: 75px
+            border-radius: 0
+
+    .header &__hide
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 74px
+
+@media (min-width: 569px)
+    .search
+        position: relative
+
+        .header &
+            flex: 0 0 auto
+
+        .input-box
+            position: absolute
+            visibility: hidden
+            right: 56px
+            top: 0
+            width: 300px
+            max-width: 0
+            overflow: hidden
+            transition: all 0.2s ease
+
+        &__input
+            box-shadow: none
+            height: 52px !important
+
+        &:hover
+            .input-box
+                visibility: visible
+                max-width: 300px

@@ -1,2 +1,58 @@
 .cms-home .header-container + .banner
     margin: 0
+
+.banner-grid
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: center center
+
+    &__container
+        margin: -15px
+
+    &__full, &__offer, &__news
+        padding: 15px
+
+.owl-prev, .owl-next
+    background: none
+    text-indent: 0
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .ico
+        fill: color2_bg
+        width: 20px
+        height: 20px
+
+    &:before
+        display: none
+
+    &:hover
+        background: color2_bg
+
+        .ico
+            fill: #fff
+
+@media (min-width: 993px)
+    .banner-grid
+        &__container
+            display: flex
+            justify-content: space-between
+            align-items: stretch
+
+        &__col
+            flex: 1
+            min-width: 0
+
+            &:nth-child(2)
+                display: flex
+                flex-flow: column nowrap
+                flex: 0 1 380px
+
+        &__offer, &__news
+            flex: 0 0 50%
+
+            .banner, .banner__wrapper, .banner__item, .banner__link
+                height: 100%

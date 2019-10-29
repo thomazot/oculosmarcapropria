@@ -13,7 +13,7 @@ bold = 700
 /**
  * Mixin - Viewport
  */
-viewport = 1160px
+viewport = 1170px
 /**
  * Mixin - Responsive
  * @media (max-width screen-sm-min)
@@ -52,6 +52,16 @@ body
 
 .js-stickybit-parent
     padding-top: 140px
+
+.main
+    margin: 0
+
+.main-container
+    width: viewport
+    max-width: 100%
+
+.main-container
+    positioin: static
 
 /*
  * Components
@@ -98,3 +108,16 @@ body
 @import 'components/header'
 @import 'components/banner'
 @import 'components/topo-head'
+@import 'components/search'
+@import 'components/mycart'
+@import 'components/footer'
+@import 'components/products'
+@import 'components/ruler'
+@import 'components/price'
+@import 'components/breadcrumb'
+/**
+ * Catalog
+ */
+@import 'pages/category'
+@import 'pages/prod'
+@import 'pages/cart'

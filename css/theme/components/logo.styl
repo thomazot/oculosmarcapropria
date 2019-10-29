@@ -1,4 +1,24 @@
 .logo
     .header &
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        flex: 1
+        min-width: 0
+        text-align: center
+
+        a
+            display: inline-block
+
         img, svg
-            height: 48px
+            height: 55px
+            max-height: none
+            max-width: none
+
+@media (min-width: 993px)
+    .logo
+        .header &
+            flex: 0 0 auto
+
+            img, svg
+                height: 70px

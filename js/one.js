@@ -158,6 +158,14 @@
                 'z-menu': {
                     selector: '.categories__show',
                     mode: 'html'
+                },
+                'z-next': {
+                    selector: '.owl-next',
+                    mode: 'html'
+                },
+                'z-prev': {
+                    selector: '.owl-prev',
+                    mode: 'html'
                 }
             }
             $j(document).ready(function() {
@@ -907,8 +915,6 @@ function default_carrossel_produtos() {
                         [0, 1],
                         [568, 2],
                         [768, 3],
-                        [1024, 4],
-                        [1270, 5],
                     ],
                     beforeMove: function() {
                         if (typeof $j.fn.lazyload != 'undefined') {
@@ -1457,7 +1463,10 @@ $j(document)
         })
 
         // Header sticky 
-        stickybits('.header-container');
+        stickybits('.header-container .header');
+
+        // menu 
+        $('.categories__hide').after($('.topo-head').clone())
     })
     .on('resizeStop', function(e) {
         // Safe window.resize

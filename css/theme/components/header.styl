@@ -1,4 +1,22 @@
 .header
+    order: -1
+    justify-content: space-between
+    width: viewport
+    max-width: 100%
+    padding: 10px 0
+
     &-container
         position: sticky
         top: 0
+        display: flex
+        flex-flow: column nowrap
+
+@media (min-width: 993px)
+    .header
+        &-container
+            transition: all 0.2s ease
+            box-shadow: none
+            border-bottom: solid 1px #f5f5f5
+
+            .scrolling &
+                transform: translateY(-35px)

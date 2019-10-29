@@ -1,8 +1,26 @@
 @media (max-width: 992px)
     .categories
+        background: #f7f7f7
+        box-shadow: inset 0 45px 0 color1_bg
+
+        &__hide
+            &:hover
+                background: color1_bg
+
         &__show
+            order: -1
+            background: none
+
+            .ico
+                fill: color2_bg
+                width: 20px
+                height: 20px
+
             &:before
                 display: none
+
+        .ul--0
+            margin: 10px
 
         .parent
             position: relative
@@ -20,7 +38,7 @@
                 align-items: center
 
             &:after
-                icon('\f054')
+                content: '+'
                 position: absolute
                 top: 0
                 right: 0
@@ -30,20 +48,70 @@
                 align-items: center
                 width: 48px
                 height: 48px
-                font-size: 20px
-                background: rgba(255, 255, 255, 0.1)
+                font-size: 25px
+                background: none
                 transition: all 0.2s ease
 
             &.on
                 &:after
-                    transform: rotate(90deg)
+                    transform: rotate(45deg)
 
                 > ul
                     display: block
 
         .all-li--0
             padding-bottom: 0
+            border: solid 1px #ebebeb
+            box-shadow: 1px 1.732px 2px 0px rgba(10, 10, 10, 0.05)
+
+            + .all-li--0
+                margin-top: 10px
+
+        .all-a--0, .all-a--1
+            font-size: 14px
+            font-weight: regular
+            text-transform: uppercase
+            color: color1_bg
+
+        .all-a--0
+            padding: 10px
+
+        .all-a--1
+            padding: 5px 15px
 
 @media (min-width: 993px)
     .categories
+        background: #fff
+        flex: 1
+        min-width: 0
         margin-bottom: 0 !important
+
+        .box--1
+            box-shadow: 0px 5px 5px 0px rgba(8, 8, 8, 0.12)
+            padding: 15px 0
+
+        &__all
+            display: none
+
+        .ul--0
+            justify-content: center
+
+        .li--0
+            flex: 0 0 auto
+
+            &:hover .a--0
+                background: none
+                color: color1_bg
+
+        .a--0, .a--1
+            font-size: 14px
+            font-weight: normal
+            color: color1_bg
+            text-transform: uppercase
+
+        .a--1
+            padding: 10px 25px
+
+            &:hover
+                background: #f6f6f6
+                color: #ff6c00
