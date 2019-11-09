@@ -12693,6 +12693,54 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
+.product-options {
+  margin-top: 20px;
+}
+.product-options table thead th,
+.product-options table thead td {
+  background: #fff;
+  color: @bg(1);
+  font-size: 13px;
+  padding: 10px 0;
+}
+.product-options table thead th + td,
+.product-options table thead td + td,
+.product-options table thead th + th,
+.product-options table thead td + th {
+  padding-left: 20px;
+}
+.product-options table tbody td {
+  border: 0;
+  padding: 10px 0;
+}
+.product-options table tbody td + td {
+  padding-left: 20px;
+}
+.product-options table tbody td .text {
+  width: 35px;
+  height: 36px;
+  border: solid 1px #ebebeb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-size: 13px;
+  color: @bg(1);
+}
+.product-options-bottom + .price-box {
+  justify-content: flex-end;
+}
+.product-options-bottom + .price-box:before {
+  content: 'Total: ';
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+.product-options-bottom + .price-box .regular-price {
+  display: inline-block;
+}
 @media (min-width: 993px) {
   .more-views {
     border: 0;

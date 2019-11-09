@@ -130,6 +130,53 @@
                 text-transform: uppercase
                 color: #fff
 
+.product-options
+    margin-top: 20px
+
+    table
+        thead
+            th, td
+                background: #fff
+                color: color1_bg
+                font-size: 13px
+                padding: 10px 0
+
+                + td, + th
+                    padding-left: 20px
+
+        tbody
+            td
+                border: 0
+                padding: 10px 0
+
+                + td
+                    padding-left: 20px
+
+                .text
+                    width: 35px
+                    height: 36px
+                    border: solid 1px #ebebeb
+                    border-radius: 50%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    line-height: 1
+                    font-size: 13px
+                    color: color1_bg
+
+.product-options-bottom + .price-box
+    justify-content: flex-end
+
+    &:before
+        content: 'Total: '
+        font-size: 13px
+        font-weight: bold
+        text-transform: uppercase
+        margin-right: 5px
+
+    .regular-price
+        display: inline-block
+
 @media (min-width: 993px)
     .more-views
         border: 0
