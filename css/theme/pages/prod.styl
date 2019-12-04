@@ -9,7 +9,7 @@
     border-bottom: solid 1px #ebebeb
 
 .sharing-links
-    display: flex
+    display: none
     justify-content: flex-end
 
     @media (min-width: 993px)
@@ -241,6 +241,9 @@
         display: inline-block
 
 @media (min-width: 993px)
+    .sharing-links
+        display: flex
+
     .more-views
         border: 0
 
@@ -251,3 +254,8 @@
 
         &__shop
             flex: 0 1 380px
+
+@media (max-width: 992px)
+    .product-image-container
+        .more-views
+            display: none
