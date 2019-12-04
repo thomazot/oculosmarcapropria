@@ -12568,7 +12568,70 @@ body {
   border-bottom: solid 1px #ebebeb;
 }
 .sharing-links {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 993px) {
+  .sharing-links {
+    margin-top: -40px;
+  }
+}
+.sharing-links:before {
+  display: flex;
+  aling-items: center;
+  content: 'Compartilhe! ';
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: #959595;
+  margin-right: 5px;
+}
+.sharing-links .list:before {
   display: none;
+}
+.sharing-links li {
+  display: none;
+  flex: 0 0 20px;
+}
+.sharing-links li.fb-share,
+.sharing-links li.tt-share,
+.sharing-links li.pt-share {
+  display: block;
+}
+.sharing-links li.fb-share a,
+.sharing-links li.tt-share a,
+.sharing-links li.pt-share a {
+  background: none;
+  width: 20px;
+}
+.sharing-links li.fb-share a .ico,
+.sharing-links li.tt-share a .ico,
+.sharing-links li.pt-share a .ico {
+  fill: @bg(2);
+}
+.product-image-container {
+  display: flex;
+}
+.product-image-container .more-views {
+  position: relative;
+  z-index: 10;
+  order: -1;
+  flex: 0 0 65px;
+  min-width: 0;
+}
+.product-image-container .more-views .product-image-thumbs {
+  display: block;
+}
+@media (min-width: 993px) {
+  .product-image-container .more-views {
+    flex: 0 0 140px;
+  }
+}
+.prod__shop .product-options {
+  display: none;
+}
+.user-logged .prod__shop .product-options {
+  display: block;
 }
 .prod__shop .col {
   width: 100%;
@@ -12656,10 +12719,18 @@ body {
 .prod__sku-wish li.link-wishlist a span {
   display: none;
 }
-.prod__description .std {
+.prod__description {
   font-size: 13px;
   color: #898989;
   margin-bottom: 15px;
+}
+.prod__description .std {
+  padding: 15px 0;
+  font-size: 13px;
+  color: #898989;
+  margin: 15px 0;
+  border-top: solid 1px #ebebeb;
+  border-bottom: solid 1px #ebebeb;
 }
 .prod__login {
   background: #f1f1f1;
@@ -12750,12 +12821,17 @@ body {
     min-width: 0;
   }
   .prod__shop {
-    flex: 0 1 370px;
+    flex: 0 1 380px;
   }
 }
 .checkout-cart-index .page-title,
 .checkout-cart-index .breadcrumb {
   display: none;
+}
+.cart__description {
+  font-size: 13px;
+  color: #959595;
+  padding: 20px 0;
 }
 .qty-wrapper input {
   box-shadow: none;
@@ -12987,4 +13063,10 @@ body {
   .cart__links .btn {
     max-width: 280px;
   }
+}
+.opc .header-container {
+  background: #fff;
+}
+.opc .header .logo {
+  justify-content: center;
 }

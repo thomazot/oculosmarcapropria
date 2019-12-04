@@ -1,6 +1,6 @@
 {
-    "protocol": "http",
-    "host": "oculosmarcapropria.loja.biz",
+    "protocol": "https",
+    "host": "oculosmarcapropria.dev.bizcommerce.com.br",
     "browsers": [">1%"],
     "pxtorem": {
         "rootValue": 16,

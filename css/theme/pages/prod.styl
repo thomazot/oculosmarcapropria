@@ -9,10 +9,65 @@
     border-bottom: solid 1px #ebebeb
 
 .sharing-links
-    display: none
+    display: flex
+    justify-content: flex-end
+
+    @media (min-width: 993px)
+        margin-top: -40px
+
+    &:before
+        display: flex
+        aling-items: center
+        content: 'Compartilhe! '
+        align-items: center
+        font-size: 13px
+        font-weight: regular
+        color: #959595
+        margin-right: 5px
+
+    .list
+        &:before
+            display: none
+
+    li
+        display: none
+        flex: 0 0 20px
+
+        &.fb-share, &.tt-share, &.pt-share
+            display: block
+
+            a
+                background: none
+                width: 20px
+
+                .ico
+                    fill: color2_bg
+
+// Thumbs Image Vertical
+.product-image-container
+    display: flex
+
+    .more-views
+        position: relative
+        z-index: 10
+        order: -1
+        flex: 0 0 65px
+        min-width: 0
+
+        .product-image-thumbs
+            display: block
+
+        @media (min-width: 993px)
+            flex: 0 0 140px
 
 .prod
     &__shop
+        .product-options
+            display: none
+
+            .user-logged &
+                display: block
+
         .col
             width: 100%
 
@@ -93,10 +148,18 @@
                 span
                     display: none
 
-    &__description .std
+    &__description
         font-size: 13px
         color: #898989
         margin-bottom: 15px
+
+        .std
+            padding: 15px 0
+            font-size: 13px
+            color: #898989
+            margin: 15px 0
+            border-top: solid 1px #ebebeb
+            border-bottom: solid 1px #ebebeb
 
     &__login
         background: #f1f1f1
@@ -187,4 +250,4 @@
             min-width: 0
 
         &__shop
-            flex: 0 1 370px
+            flex: 0 1 380px
